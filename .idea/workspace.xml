@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b04aad54-66af-408f-9f85-661646cc65ea" name="Changes" comment="Cria os dtos referente ao modelo usuario">
+    <list default="true" id="b04aad54-66af-408f-9f85-661646cc65ea" name="Changes" comment="Cria os metodos crud no usuario service">
+      <change afterPath="$PROJECT_DIR$/src/test/java/UsuarioServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/java/models/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/java/models/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/java/services/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/java/services/UsuarioService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,23 +43,63 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="at.java.Main" />
+  <component name="RunManager" selected="JUnit.UsuarioServiceTest.testeBuscaUsuario">
+    <configuration name="UsuarioServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hugo_oliveira_DR3_AT" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UsuarioServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioServiceTest.testeAtualizaUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hugo_oliveira_DR3_AT" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UsuarioServiceTest" />
+      <option name="METHOD_NAME" value="testeAtualizaUsuario" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioServiceTest.testeBuscaUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hugo_oliveira_DR3_AT" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UsuarioServiceTest" />
+      <option name="METHOD_NAME" value="testeBuscaUsuario" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioServiceTest.testeExcluiUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hugo_oliveira_DR3_AT" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UsuarioServiceTest" />
+      <option name="METHOD_NAME" value="testeExcluiUsuario" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioServiceTest.testeInsercaoUsuarioRepetido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hugo_oliveira_DR3_AT" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UsuarioServiceTest" />
+      <option name="METHOD_NAME" value="testeInsercaoUsuarioRepetido" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UsuarioServiceTest.testeBuscaUsuario" />
+        <item itemvalue="JUnit.UsuarioServiceTest" />
+        <item itemvalue="JUnit.UsuarioServiceTest.testeInsercaoUsuarioRepetido" />
+        <item itemvalue="JUnit.UsuarioServiceTest.testeExcluiUsuario" />
+        <item itemvalue="JUnit.UsuarioServiceTest.testeAtualizaUsuario" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702475471246</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Cria os metodos crud no usuario service">
+      <created>1702478065288</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702478065288</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +166,12 @@
     <MESSAGE value="Cria a estrutura inicial do projeto" />
     <MESSAGE value="Cria o modelo usuario" />
     <MESSAGE value="Cria os dtos referente ao modelo usuario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cria os dtos referente ao modelo usuario" />
+    <MESSAGE value="Cria os metodos crud no usuario service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cria os metodos crud no usuario service" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/hugo_oliveira_DR3_AT$Main.ic" NAME="Main Coverage Results" MODIFIED="1702478674107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>at.java.*</FILTER>
+    </SUITE>
   </component>
 </project>
