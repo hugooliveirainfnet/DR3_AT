@@ -1,11 +1,12 @@
 import at.java.dtos.UsuarioDTOInput;
 import at.java.dtos.UsuarioDTOOutput;
 import at.java.services.UsuarioService;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.modelmapper.ModelMapper;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class UsuarioServiceUnitTest {
 
@@ -32,21 +33,23 @@ public class UsuarioServiceUnitTest {
     }
 
     @Test
-    public void testeInsercaoUmUsuario() {
+    public void testeInsercaoUmUsuario() throws Exception{
         service.inserir(usuario);
         assertEquals(1, service.listar().size());
     }
     @Test
     public void testeInsercaoUsuarioRepetido() {
-        service.inserir(usuario);
-        service.inserir(usuario1);
-        service.inserir(usuario2);
 
-        assertEquals(2, service.listar().size());
+            service.inserir(usuario);
+            service.inserir(usuario1);
+            service.inserir(usuario2);
+            assertEquals(2, service.listar().size());
+
+
     }
 
     @Test
-    public void testeBuscaUsuario() {
+    public void testeBuscaUsuario() throws Exception{
         service.inserir(usuario);
         service.inserir(usuario1);
         UsuarioDTOOutput dtoOutput = modelMapper.map(usuario1, UsuarioDTOOutput.class);
@@ -54,7 +57,7 @@ public class UsuarioServiceUnitTest {
     }
 
     @Test
-    public void testeAtualizaUsuario () {
+    public void testeAtualizaUsuario() throws Exception{
         service.inserir(usuario);
         service.inserir(usuario1);
 
@@ -65,7 +68,7 @@ public class UsuarioServiceUnitTest {
     }
 
     @Test
-    public void testeExcluiUsuario() {
+    public void testeExcluiUsuario() throws Exception{
         service.inserir(usuario);
         service.inserir(usuario1);
         assertEquals(2, service.listar().size());

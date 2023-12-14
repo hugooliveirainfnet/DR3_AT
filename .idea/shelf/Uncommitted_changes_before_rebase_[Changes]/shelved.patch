@@ -1,0 +1,25 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\r\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n\r\n    <groupId>at.java</groupId>\r\n    <artifactId>hugo_oliveira_DR3_AT</artifactId>\r\n    <version>1.0-SNAPSHOT</version>\r\n\r\n    <properties>\r\n        <maven.compiler.source>17</maven.compiler.source>\r\n        <maven.compiler.target>17</maven.compiler.target>\r\n    </properties>\r\n\r\n    <dependencies>\r\n\r\n        <dependency>\r\n            <groupId>com.sparkjava</groupId>\r\n            <artifactId>spark-core</artifactId>\r\n            <version>2.9.4</version>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>com.fasterxml.jackson.core</groupId>\r\n            <artifactId>jackson-databind</artifactId>\r\n            <version>2.14.2</version>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>org.slf4j</groupId>\r\n            <artifactId>slf4j-api</artifactId>\r\n            <version>2.0.7</version>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>org.slf4j</groupId>\r\n            <artifactId>slf4j-simple</artifactId>\r\n            <version>2.0.7</version>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>org.modelmapper</groupId>\r\n            <artifactId>modelmapper</artifactId>\r\n            <version>3.1.1</version>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>jakarta.platform</groupId>\r\n            <artifactId>jakarta.jakartaee-api</artifactId>\r\n            <version>8.0.0</version>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>org.hibernate</groupId>\r\n            <artifactId>hibernate-core</artifactId>\r\n            <version>6.1.7.Final</version>\r\n        </dependency>\r\n\r\n        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->\r\n        <dependency>\r\n            <groupId>org.projectlombok</groupId>\r\n            <artifactId>lombok</artifactId>\r\n            <version>1.18.30</version>\r\n            <scope>provided</scope>\r\n        </dependency>\r\n\r\n        <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->\r\n        <dependency>\r\n            <groupId>com.h2database</groupId>\r\n            <artifactId>h2</artifactId>\r\n            <version>2.1.214</version>\r\n            <scope>test</scope>\r\n        </dependency>\r\n\r\n    </dependencies>\r\n\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision 0becb6889f2e621e010d1697db18a1df493e7427)
++++ b/pom.xml	(date 1702478276976)
+@@ -73,6 +73,13 @@
+             <scope>test</scope>
+         </dependency>
+ 
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>4.12</version>
++            <scope>test</scope>
++        </dependency>
++
+     </dependencies>
+ 
+ </project>
+\ No newline at end of file

@@ -2,13 +2,12 @@ package at.java.controllers;
 
 import at.java.dtos.UsuarioDTOInput;
 import at.java.dtos.UsuarioDTOOutput;
+import at.java.exceptions.UsuarioExceptions;
 import at.java.services.UsuarioService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import static spark.Spark.get;
-import static spark.Spark.post;
-import static spark.Spark.put;
-import static spark.Spark.delete;
+import static spark.Spark.*;
+
 public class UsuarioController {
     private static final UsuarioService service =  UsuarioService.getInstance();
     private static final ObjectMapper objectMapper = new ObjectMapper();
@@ -21,6 +20,7 @@ public class UsuarioController {
             response.status(201);
             return "";
         });
+
 
         put("/usuarios", (request, response) -> {
             UsuarioDTOInput dtoInput = objectMapper.readValue(request.body(), UsuarioDTOInput.class);

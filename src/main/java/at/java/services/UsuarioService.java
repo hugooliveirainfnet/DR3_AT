@@ -2,6 +2,7 @@ package at.java.services;
 
 import at.java.dtos.UsuarioDTOInput;
 import at.java.dtos.UsuarioDTOOutput;
+import at.java.exceptions.UsuarioExceptions;
 import at.java.models.Usuario;
 import org.modelmapper.ModelMapper;
 
@@ -29,6 +30,9 @@ public class UsuarioService {
         Usuario usuario = modelMapper.map(dtoInput, Usuario.class);
         if(!usuarios.contains(usuario))
             usuarios.add(usuario);
+//            UsuarioExceptions.inclusaoException();
+
+
     }
 
     public void alterar(UsuarioDTOInput dtoInput) {
