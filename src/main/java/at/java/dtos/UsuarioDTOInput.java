@@ -1,11 +1,18 @@
 package at.java.dtos;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class UsuarioDTOInput {
 
-    private int id;
+    private Long id;
     private String nome;
     private String senha;
 }
