@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b04aad54-66af-408f-9f85-661646cc65ea" name="Changes" comment="Cria os dtos referente ao modelo usuario">
+    <list default="true" id="b04aad54-66af-408f-9f85-661646cc65ea" name="Changes" comment="Atualiza dtos">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UsuarioControllerIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UsuarioDTOTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/java/controllers/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/java/controllers/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/java/dtos/UsuarioDTOInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/java/dtos/UsuarioDTOInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/java/dtos/UsuarioDTOOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/java/dtos/UsuarioDTOOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/java/services/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/java/services/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UsuarioServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UsuarioServiceUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -35,69 +46,102 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.UsuarioServiceTest.testeBuscaUsuario">
-    <configuration name="UsuarioServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="JUnit.UsuarioControllerIntegrationTest">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.java.Main" />
+      <module name="hugo_oliveira_DR3_AT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hugo_oliveira_DR3_AT" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UsuarioServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="UsuarioControllerIntegrationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsuarioServiceTest.testeAtualizaUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UsuarioControllerIntegrationTest.esperaStatusCode200EoRetornoSejaIgualAoUsuarioInserido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hugo_oliveira_DR3_AT" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UsuarioServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="UsuarioControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="esperaStatusCode200EoRetornoSejaIgualAoUsuarioInserido" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioControllerIntegrationTest.esperaStatusCode201AoInserirNovoUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hugo_oliveira_DR3_AT" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UsuarioControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="esperaStatusCode201AoInserirNovoUsuario" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioControllerIntegrationTest.esperaStatusCode204AoModificarUmUsuarioExistenteEORetornoSejaIgualAoUsuarioModificado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hugo_oliveira_DR3_AT" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UsuarioControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="esperaStatusCode204AoModificarUmUsuarioExistenteEORetornoSejaIgualAoUsuarioModificado" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioServiceUnitTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="hugo_oliveira_DR3_AT" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UsuarioServiceUnitTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioServiceUnitTest.testeAtualizaUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hugo_oliveira_DR3_AT" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UsuarioServiceUnitTest" />
       <option name="METHOD_NAME" value="testeAtualizaUsuario" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsuarioServiceTest.testeBuscaUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hugo_oliveira_DR3_AT" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UsuarioServiceTest" />
-      <option name="METHOD_NAME" value="testeBuscaUsuario" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UsuarioServiceTest.testeExcluiUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hugo_oliveira_DR3_AT" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UsuarioServiceTest" />
-      <option name="METHOD_NAME" value="testeExcluiUsuario" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UsuarioServiceTest.testeInsercaoUsuarioRepetido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hugo_oliveira_DR3_AT" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UsuarioServiceTest" />
-      <option name="METHOD_NAME" value="testeInsercaoUsuarioRepetido" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.UsuarioServiceUnitTest" />
+      <item itemvalue="JUnit.UsuarioControllerIntegrationTest" />
+      <item itemvalue="JUnit.UsuarioControllerIntegrationTest.esperaStatusCode200EoRetornoSejaIgualAoUsuarioInserido" />
+      <item itemvalue="JUnit.UsuarioControllerIntegrationTest.esperaStatusCode201AoInserirNovoUsuario" />
+      <item itemvalue="JUnit.UsuarioControllerIntegrationTest.esperaStatusCode204AoModificarUmUsuarioExistenteEORetornoSejaIgualAoUsuarioModificado" />
+      <item itemvalue="JUnit.UsuarioServiceUnitTest.testeAtualizaUsuario" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UsuarioServiceTest.testeBuscaUsuario" />
-        <item itemvalue="JUnit.UsuarioServiceTest" />
-        <item itemvalue="JUnit.UsuarioServiceTest.testeInsercaoUsuarioRepetido" />
-        <item itemvalue="JUnit.UsuarioServiceTest.testeExcluiUsuario" />
-        <item itemvalue="JUnit.UsuarioServiceTest.testeAtualizaUsuario" />
+        <item itemvalue="JUnit.UsuarioControllerIntegrationTest" />
+        <item itemvalue="JUnit.UsuarioControllerIntegrationTest.esperaStatusCode204AoModificarUmUsuarioExistenteEORetornoSejaIgualAoUsuarioModificado" />
+        <item itemvalue="JUnit.UsuarioControllerIntegrationTest.esperaStatusCode200EoRetornoSejaIgualAoUsuarioInserido" />
+        <item itemvalue="JUnit.UsuarioServiceUnitTest.testeAtualizaUsuario" />
+        <item itemvalue="JUnit.UsuarioControllerIntegrationTest.esperaStatusCode201AoInserirNovoUsuario" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +189,35 @@
       <option name="project" value="LOCAL" />
       <updated>1702478065288</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Cria os metodos crud no controller">
+      <created>1702484336466</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702484336466</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Remove dependencias não utilizadas">
+      <created>1702514821884</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702514821884</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Altera a porta padrão do servidor do spark para 8080">
+      <created>1702514859250</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702514859250</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Atualiza modelo usuario">
+      <created>1702514897404</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702514897404</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,7 +237,28 @@
     <MESSAGE value="Cria o modelo usuario" />
     <MESSAGE value="Cria os dtos referente ao modelo usuario" />
     <MESSAGE value="Cria os metodos crud no usuario service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cria os metodos crud no usuario service" />
+    <MESSAGE value="Cria os metodos crud no controller" />
+    <MESSAGE value="Remove dependencias não utilizadas" />
+    <MESSAGE value="Altera a porta padrão do servidor do spark para 8080" />
+    <MESSAGE value="Atualiza modelo usuario" />
+    <MESSAGE value="Atualiza dtos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualiza dtos" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/at/java/services/UsuarioService.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/at/java/services/UsuarioService.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/hugo_oliveira_DR3_AT$Main.ic" NAME="Main Coverage Results" MODIFIED="1702478674107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

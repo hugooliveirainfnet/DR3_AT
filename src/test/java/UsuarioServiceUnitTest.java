@@ -1,6 +1,5 @@
 import at.java.dtos.UsuarioDTOInput;
 import at.java.dtos.UsuarioDTOOutput;
-import at.java.models.Usuario;
 import at.java.services.UsuarioService;
 import org.junit.Before;
 import org.junit.Test;
@@ -8,27 +7,26 @@ import org.modelmapper.ModelMapper;
 
 import static org.junit.Assert.assertEquals;
 
-public class UsuarioServiceTest {
+public class UsuarioServiceUnitTest {
 
     private final ModelMapper modelMapper = new ModelMapper();
-    UsuarioService service;
+    UsuarioService service = UsuarioService.getInstance();
     UsuarioDTOInput usuario = new UsuarioDTOInput();
     UsuarioDTOInput usuario1 = new UsuarioDTOInput();
     UsuarioDTOInput usuario2 = new UsuarioDTOInput();
 
     @Before
     public void init() {
-        service = new UsuarioService();
 
-        usuario.setId(11);
+        usuario.setId(11L);
         usuario.setNome("Hugo");
         usuario.setSenha("1234");
 
-        usuario1.setId(12);
+        usuario1.setId(12L);
         usuario1.setNome("oguh");
         usuario1.setSenha("4321");
 
-        usuario2.setId(11);
+        usuario2.setId(11L);
         usuario2.setNome("Hugo Repetido");
         usuario2.setSenha("123");
     }
@@ -52,7 +50,7 @@ public class UsuarioServiceTest {
         service.inserir(usuario);
         service.inserir(usuario1);
         UsuarioDTOOutput dtoOutput = modelMapper.map(usuario1, UsuarioDTOOutput.class);
-        assertEquals(dtoOutput, service.buscar(12));
+        assertEquals(dtoOutput, service.buscar(12L));
     }
 
     @Test
