@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b04aad54-66af-408f-9f85-661646cc65ea" name="Changes" comment="Cria os testes da aplicação">
+    <list default="true" id="b04aad54-66af-408f-9f85-661646cc65ea" name="Changes" comment="Mudanças finais">
       <change afterPath="$PROJECT_DIR$/src/main/java/at/java/exceptions/UsuarioExceptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -252,7 +252,8 @@
     <MESSAGE value="Atualiza dtos" />
     <MESSAGE value="Cria os endpoints da aplicação" />
     <MESSAGE value="Cria os testes da aplicação" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cria os testes da aplicação" />
+    <MESSAGE value="Mudanças finais" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mudanças finais" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/hugo_oliveira_DR3_AT$Main.ic" NAME="Main Coverage Results" MODIFIED="1702478674107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
